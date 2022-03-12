@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Betty Carse</title>
     <link rel="stylesheet" href="styles.css" />
-    <
     <script src="script.js" type=""></script>
   </head>
   <body>
@@ -21,10 +20,10 @@
             <a href="index.html">Home</a>
           </li>
           <li>
-            <a href="about.html">About</a>
+            <a href="timeline.html">Timeline</a>
           </li>
           <li>
-            <a href="timeline.html">Timeline</a>
+            <a href="stories.html">Stories</a>
           </li>
           <li>
             <a href="chapters.html" class="active">Chapters</a>
@@ -60,8 +59,20 @@
       </nav>
     </section> -->
 
-    <section class="chapters">
+    <section class="chapter-nav">
       <div>
+        <button onclick="toggleGallery('young')">Youth</button>
+        <button onclick="toggleGallery('marriage')">Marriage</button>
+        <button onclick="toggleGallery('family')">Family</button>
+        <button onclick="toggleGallery('children')">Children</button>
+        <button onclick="toggleGallery('grandchildren')">Grandchildren</button>
+        <button onclick="toggleGallery('friends')">Friends</button>
+        <button onclick="toggleGallery('work')">Work</button>
+      </div>
+    </section>
+
+    <section class="chapters">
+      <div id="young">
         <h2 class="">Young Betty</h2>
         <div class="gallery">
           <!-- All images from Unsplash -->
@@ -169,7 +180,7 @@
           />
         </div>
       </div>
-      <div>
+      <div id="marriage">
         <h2 class="">Betty & Herb</h2>
         <div class="gallery">
           <!-- All images from Unsplash -->
@@ -319,7 +330,31 @@
           />
         </div>
       </div>
-      <div>
+      <div id="family">
+        <h2 class="">Family</h2>
+        <div class="gallery">
+          <!-- All images from Unsplash -->
+        </div>
+      </div>
+      <div id="children">
+        <h2 class="">Family</h2>
+        <div class="gallery">
+          <!-- All images from Unsplash -->
+        </div>
+      </div>
+      <div id="grandchildren">
+        <h2 class="">Family</h2>
+        <div class="gallery">
+          <!-- All images from Unsplash -->
+        </div>
+      </div>
+      <div id="work">
+        <h2 class="">Family</h2>
+        <div class="gallery">
+          <!-- All images from Unsplash -->
+        </div>
+      </div>
+      <div id="friends">
         <h2 class="">Family</h2>
         <div class="gallery">
           <!-- All images from Unsplash -->

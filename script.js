@@ -54,28 +54,35 @@ function closeModal() {
 // }
 
 function toggleGallery(gallery) {
-  console.log(gallery);
-  var all = document.getElementById('gallery-all');
-  var corporate = document.getElementById('gallery-corporate');
-  var lettering = document.getElementById('gallery-lettering');
-  var home = document.getElementById('gallery-home');
-  var galleryID = document.getElementById('galleryID');
+  var young = document.getElementById('young');
+  var marriage = document.getElementById('marriage');
+  var family = document.getElementById('family');
+  var children = document.getElementById('children');
+  var grandchildren = document.getElementById('grandchildren');
+  var work = document.getElementById('work');
+  var friends = document.getElementById('friends');
 
-  all.style.visibility = 'hidden';
-  corporate.style.visibility = 'hidden';
-  lettering.style.visibility = 'hidden';
-  home.style.visibility = 'hidden';
+  young.style.display = 'none';
+  marriage.style.display = 'none';
+  family.style.display = 'none';
+  children.style.display = 'none';
+  grandchildren.style.display = 'none';
+  work.style.display = 'none';
+  friends.style.display = 'none';
 
-  if (gallery === 'gallery-all') {
-    all.style.visibility = 'visible';
-  } else if (gallery === 'gallery-corporate') {
-    console.log(gallery);
-    corporate.style.visibility = 'visible';
-  } else if (gallery === 'gallery-lettering') {
-    console.log(gallery);
-    lettering.style.visibility = 'visible';
-  } else if (gallery === 'gallery-home') {
-    console.log(gallery);
-    home.style.visibility = 'visible';
+  if (gallery === 'young') {
+    young.style.display = 'block';
+  } else if (gallery === 'marriage') {
+    marriage.style.display = 'block';
+  } else if (gallery === 'family') {
+    family.style.display = 'block';
+  } else if (gallery === 'children') {
+    children.style.display = 'block';
+  } else if (gallery === 'grandchildren') {
+    grandchildren.style.display = 'block';
+  } else if (gallery === 'work') {
+    work.style.display = 'block';
+  } else if (gallery === 'friends') {
+    friends.style.display = 'block';
   }
 }
