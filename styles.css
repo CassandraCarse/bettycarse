@@ -338,7 +338,8 @@ img.hover-shadow {
   box-shadow: none;
 }
 
-.chapter-nav button:hover {
+.chapter-nav button:hover,
+.chapter-nav button:active {
   background-color: #eab7b6;
 }
 
